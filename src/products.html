@@ -1,0 +1,26 @@
+{% extends "layouts/theme.html" %}
+<!-- THIS STARTS THE LANDING PAGE -->
+
+{% block content %}
+
+<!---->
+<div class="w-5/5 md:w-10/12 lg:w-9/12 mx-auto">
+
+    <div class="my-5 text-center" >
+        <h1 class="text-2xl font-bold">Our products</h1>
+        <p>Some interesting text</p>
+    </div>
+    <div class="flex flex-wrap justify-center">
+        {% for i in [1,2,3,4,5,6] %}
+        {% include "widgets/product-widget.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="py-2 bg-gray-100 mt-5">
+
+</div>
+{% endblock %}
+
+
+

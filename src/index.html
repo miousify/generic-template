@@ -1,0 +1,49 @@
+{% extends "layouts/theme.html" %}
+<!-- THIS STARTS THE LANDING PAGE -->
+
+{% block content %}
+
+<div class="bg-gray-100 flex items-center text-center" style="height: 50vh">
+    <div class="w-5/5 md:w-10/12 mx-auto">
+        <h1 class="text-4xl font-bold">Store name goes here</h1>
+        <p>Brief information of what you offer </p>
+        <a href="/products" class="my-2 inline-block px-3 py-2 border bg-orange-500 text-gray-100">Start Shopping</a>
+    </div>
+</div>
+
+
+<div class="w-5/5 md:w-10/12 lg:w-9/12 mx-auto">
+
+    <div class="my-5 text-center" >
+        <h1 class="text-2xl font-bold">Just a few items</h1>
+        <p>Some interesting text</p>
+    </div>
+    <div class="flex flex-wrap justify-center">
+        {% for i in [1,2,3,4,5,6] %}
+            {% include "widgets/product-widget.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="bg-gray-100 flex content-center items-center" style="min-height: 25vh" id="about">
+    <div class="w-5/5 md:w-10/12 mx-auto my-5  ">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">About us</h1>
+            <p>Business description goes here</p>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-200 flex content-center items-center" style="min-height: 25vh" id="contact">
+    <div class="w-5/5 md:w-10/12 mx-auto my-5  ">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Contact</h1>
+            <p>Business description goes here</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+

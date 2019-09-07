@@ -1,0 +1,17 @@
+{
+  "name": "miousify-basic-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:build": "npx tailwind build src/assets/css/tailwindcss.css -o  src/assets/css/generated.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.0",
+    "tailwindcss": "^1.1.2"
+  }
+}
